@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/nb" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    <javaModelGenerator targetPackage="com.joyo.pojo" targetProject="src" />
+    <sqlMapGenerator targetPackage="com.joyo.dao" targetProject="src" />
+    <javaClientGenerator targetPackage="com.joyo.dao.provider" targetProject="src"  type="ANNOTATEDMAPPER"/>
+    
+    
+    <table  tableName="historicalrecords" domainObjectName="HistoricalRecords" 
+    enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false"
+                selectByExampleQueryId="false">
+    <!-- 参考 javaModelGenerator 的 constructorBased属性-->
+        <property name="constructorBased" value="false"/>
+        
+        <!-- 默认为false，如果设置为true，在生成的SQL中，table名字不会加上catalog或schema； -->
+        <property name="ignoreQualifiersAtRuntime" value="false"/>
+        
+        <!-- 参考 javaModelGenerator 的 immutable 属性 -->
+        <property name="immutable" value="false"/>
+        
+        <!-- 指定是否只生成domain类，如果设置为true，只生成domain类，如果还配置了sqlMapGenerator，那么在mapper XML文件中，只生成resultMap元素 -->
+        <property name="modelOnly" value="false"/>
+      
+    </table>
+    
+ 
+    
+    
+  </context>
+</generatorConfiguration>
