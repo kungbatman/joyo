@@ -30,11 +30,11 @@ public class HistoricalRecordsSqlProvider {
  					}
  					**/
  					
- 					else if(historicalrecords.getStatus()!= null && !historicalrecords.getStatus().equals("")){
+ 					 if(historicalrecords.getStatus()!= null && !historicalrecords.getStatus().equals("")){
  						WHERE("status = #{historicalrecords.status}");
  					}
  					
- 					else if(historicalrecords.getUploadtime()!= null && !historicalrecords.getUploadtime().equals("")){
+ 					 if(historicalrecords.getUploadtime()!= null && !historicalrecords.getUploadtime().equals("")){
  						WHERE("upLoadTime = #{historicalrecords.uploadtime}");
  					}
  					
@@ -69,11 +69,11 @@ public class HistoricalRecordsSqlProvider {
  						WHERE("  meterNumber LIKE CONCAT ('%',#{historicalrecords.metername},'%') ");
  					}
  					**/
- 					else if(historicalrecords.getStatus()!= null && !historicalrecords.getStatus().equals("")){
+ 					 if(historicalrecords.getStatus()!= null && !historicalrecords.getStatus().equals("")){
  						WHERE("status = #{historicalrecords.status}");
  					}
  					
- 					else if(historicalrecords.getUploadtime()!= null && !historicalrecords.getUploadtime().equals("")){
+ 					 if(historicalrecords.getUploadtime()!= null && !historicalrecords.getUploadtime().equals("")){
  						WHERE("upLoadTime = #{historicalrecords.uploadtime}");
  					}
  					

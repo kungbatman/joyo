@@ -123,7 +123,8 @@ public class PagerTag extends SimpleTagSupport {
 			}
 		}else{
 			/** 靠近首页 */
-			if (this.pageIndex <= 8){
+			//this.pageIndex <= 8
+			if (this.pageIndex <= 20){
 				for (int i = 1; i <= 10; i++){
 					if (this.pageIndex == i){
 						/** 当前页码 */
